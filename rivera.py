@@ -34,6 +34,7 @@ print(good + "Aquatone Finished Processing\n")
 print(good + "Making a directory for temporary working\n")
 file = "hosts_%s.txt" % domain
 print(good + "Creating a Temporary file to read from\n")
+os.system("mkdir -p /tmp/riv/")
 os.system("cat /root/aquatone/%s/hosts.txt | cut -d ',' -f 2 > /tmp/riv/%s" % (domain, file))
 print(good + "Triggering Nmap\n")
 file_path = "/tmp/riv/%s" % file
