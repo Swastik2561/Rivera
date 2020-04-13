@@ -7,4 +7,4 @@ Search for the sub-domain all over the net &amp; scans for the ports to give sca
 2. Install Nmap
 
 # Running
-$ _python3 rivera.py <domain.name>
+$ python3 rivera.py <domain.name>
